@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
-
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  appLoaded(): any {
+    return {
+      message: 'Api worked!',
+      status: 200,
+    };
   }
 }
